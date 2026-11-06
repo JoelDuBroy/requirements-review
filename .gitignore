@@ -9,3 +9,6 @@ build/
 *.log
 .DS_Store
 *.egg-info/
+.tools/
+AGENTS.md
+CLAUDE.md
