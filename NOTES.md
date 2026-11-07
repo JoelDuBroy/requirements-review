@@ -13,5 +13,5 @@ I would add optimistic concurrency (for example an `updated_at` / version check)
 ## Demo path
 
 1. `just setup` then `just dev`
-2. Open http://localhost:3000/jobs/11111111-1111-4111-8111-111111111111
+2. Open http://localhost:3000/jobs/eng
 3. Edit text, flip kind, delete a row, add a row, Save, reload

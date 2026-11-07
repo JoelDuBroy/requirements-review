@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
+import { resolveJobId } from "../../../lib/jobId";
 
 type Kind = "must_have" | "nice_to_have";
 type Origin = "extracted" | "edited" | "added";
@@ -78,7 +79,7 @@ const kindLabel: Record<Kind, string> = {
 
 export default function JobRequirementsPage() {
   const params = useParams<{ jobId: string }>();
-  const jobId = params.jobId;
+  const jobId = resolveJobId(params.jobId);
 
   const [job, setJob] = useState<Job | null>(null);
   const [draft, setDraft] = useState<DraftRow[]>([]);
