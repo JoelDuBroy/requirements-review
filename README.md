@@ -1,10 +1,13 @@
-# Technical Check-in — Requirements review
+# requirements-review
 
 Recruiter-facing screen to review machine-extracted job requirements before a
-posting goes live. Built on the provided FastAPI + Next.js + Postgres starter.
+posting goes live. FastAPI + Next.js + PostgreSQL.
 
-**Demo job:**
-[http://localhost:3000/jobs/11111111-1111-4111-8111-111111111111](http://localhost:3000/jobs/11111111-1111-4111-8111-111111111111)
+**GitHub repo name:** `requirements-review`
+
+**Demo job:** [http://localhost:3000/jobs/eng](http://localhost:3000/jobs/eng)
+
+Short slugs (`eng`, `nurse`, `warehouse`) map to the seeded UUIDs; raw UUIDs still work.
 
 ---
 
@@ -63,7 +66,8 @@ just dev       # run the database, the API and the web app together
 | Database | `postgres://app:app@localhost:55432/screening` |
 
 `just reset` throws the database away and reloads seed data.
-`/` is only the stack status page; the review UI is under `/jobs/[jobId]`.
+`/` is the stack status page (with a link into the demo); the review UI is
+`/jobs/eng` (or `/jobs/[jobId]` / UUID).
 
 ---
 

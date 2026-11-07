@@ -77,7 +77,12 @@ export default function Home() {
         )}
       </ul>
 
-      <p style={{ color: "var(--muted)", marginTop: 32, fontSize: 14 }}>
+      <p style={{ marginTop: 32, fontSize: 14 }}>
+        <a href="/jobs/eng" style={{ color: "var(--fg)", fontWeight: 600 }}>
+          Open requirements review →
+        </a>
+      </p>
+      <p style={{ color: "var(--muted)", marginTop: 12, fontSize: 14 }}>
         Read <code>README.md</code> for the task.
       </p>
     </main>
